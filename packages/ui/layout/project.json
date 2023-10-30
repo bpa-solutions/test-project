@@ -1,18 +1,6 @@
 {
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "implicitDependencies": [
-    "@bpa/core-cache",
-    "@bpa/core-date",
-    "@bpa/core-form",
-    "@bpa/core-helpers",
-    "@bpa/core-lang",
-    "@bpa/core-models",
-    "@bpa/core-orwell",
-    "@bpa/core-redux",
-    "@bpa/core-services",
-    "@bpa/core-shared",
-    "@bpa/ui-styles"
-  ],
+  "implicitDependencies": ["@bpa/core-services"],
   "name": "@bpa/ui-layouts",
   "projectType": "library",
   "sourceRoot": "packages/ui/layouts/src",

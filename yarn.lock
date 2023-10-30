@@ -1705,6 +1705,57 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bpa/components-details@workspace:packages/components/details":
+  version: 0.0.0-use.local
+  resolution: "@bpa/components-details@workspace:packages/components/details"
+  dependencies:
+    "@bpa/core-services": "*"
+    "@bpa/ui-layouts": "*"
+    "@fluentui/react": ~8.111.2
+    "@reduxjs/toolkit": ~1.9.5
+    "@rushstack/eslint-patch": ~1.3.0
+    eslint: ~8.48.0
+    jest: ~27.1.1
+    react: 17.0.1
+    rimraf: ~5.0.1
+    typescript: 4.7.4
+  languageName: unknown
+  linkType: soft
+
+"@bpa/components-helper@workspace:packages/components/helper":
+  version: 0.0.0-use.local
+  resolution: "@bpa/components-helper@workspace:packages/components/helper"
+  dependencies:
+    "@bpa/core-services": "*"
+    "@bpa/ui-layouts": "*"
+    "@fluentui/react": ~8.111.2
+    "@reduxjs/toolkit": ~1.9.5
+    "@rushstack/eslint-patch": ~1.3.0
+    eslint: ~8.48.0
+    jest: ~27.1.1
+    react: 17.0.1
+    rimraf: ~5.0.1
+    typescript: 4.7.4
+  languageName: unknown
+  linkType: soft
+
+"@bpa/components-list@workspace:packages/components/list":
+  version: 0.0.0-use.local
+  resolution: "@bpa/components-list@workspace:packages/components/list"
+  dependencies:
+    "@bpa/core-services": "*"
+    "@bpa/ui-layouts": "*"
+    "@fluentui/react": ~8.111.2
+    "@reduxjs/toolkit": ~1.9.5
+    "@rushstack/eslint-patch": ~1.3.0
+    eslint: ~8.48.0
+    jest: ~27.1.1
+    react: 17.0.1
+    rimraf: ~5.0.1
+    typescript: 4.7.4
+  languageName: unknown
+  linkType: soft
+
 "@bpa/core-services@*, @bpa/core-services@workspace:packages/core/services":
   version: 0.0.0-use.local
   resolution: "@bpa/core-services@workspace:packages/core/services"
@@ -1780,7 +1831,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bpa/ui-layouts@workspace:packages/ui/layout":
+"@bpa/ui-layouts@*, @bpa/ui-layouts@workspace:packages/ui/layout":
   version: 0.0.0-use.local
   resolution: "@bpa/ui-layouts@workspace:packages/ui/layout"
   dependencies:
@@ -23204,6 +23255,7 @@ __metadata:
     rimraf: ~5.0.1
     serve: ^14.2.1
     sortier: ~2.0.1
+    typescript: 4.7.4
   languageName: unknown
   linkType: soft
 

@@ -4,6 +4,7 @@ import { Stack, Text } from '@fluentui/react';
 import React, { FC, useCallback, useEffect, useState } from 'react';
 
 export interface IDetailsProps {
+  readonly description: string;
   readonly listName: string;
 }
 
@@ -17,9 +18,10 @@ interface ICustomEventPayload {
  * Details component
  * @param props Params
  * @param props.listName List name to display
+ * @param props.description Description for the WebPart
  * @returns JSX.Element
  */
-const Details: FC<IDetailsProps> = ({ listName }) => {
+const Details: FC<IDetailsProps> = ({ description, listName }) => {
   const [id, setId] = useState<number>();
 
   const locationChangeChangeHandler = useCallback(
@@ -59,6 +61,7 @@ const Details: FC<IDetailsProps> = ({ listName }) => {
   return (
     <Stack>
       <Text variant="xLarge">Details of items</Text>
+      <div dangerouslySetInnerHTML={{ __html: description }} />
       <UIDetails id={id} listName={listName} />
     </Stack>
   );

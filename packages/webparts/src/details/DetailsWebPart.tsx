@@ -9,6 +9,7 @@ import * as ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 
 export interface IDetailsWebPartProps {
+  description: string;
   listName: string;
 }
 
@@ -28,6 +29,9 @@ export default class DetailsWebPart extends BaseClientSideWebPart<IDetailsWebPar
               groupFields: [
                 PropertyPaneTextField('listName', {
                   label: 'List Name'
+                }),
+                PropertyPaneTextField('description', {
+                  label: 'Description'
                 })
               ]
             }
@@ -50,6 +54,7 @@ export default class DetailsWebPart extends BaseClientSideWebPart<IDetailsWebPar
 
   public render(): void {
     const element: React.ReactElement<IDetailsProps> = React.createElement(Details, {
+      description: this.properties.description,
       listName: this.properties.listName
     });
 

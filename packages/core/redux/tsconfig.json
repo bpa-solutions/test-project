@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "types": ["jest", "node"]
+  },
+  "exclude": ["**/node_modules", "**/dist", "jest.config.js"],
+  "extends": "../../../config/base.tsconfig.json",
+  "include": ["src/**/*"]
+}

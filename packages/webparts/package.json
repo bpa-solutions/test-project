@@ -4,8 +4,10 @@
   "private": true,
   "main": "lib/index.js",
   "scripts": {
-    "build": "gulp bundle",
+    "dist": "gulp dist",
+    "dist:ship": "gulp dist --ship",
     "clean": "gulp clean",
+    "serve": "gulp serve --nobrowser",
     "test": "gulp test"
   },
   "installConfig": {

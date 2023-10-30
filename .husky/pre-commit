@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+node ./.yarn/releases/yarn-3.4.1.cjs lint-staged
+

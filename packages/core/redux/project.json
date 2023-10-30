@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": ["@bpa/core-services"],
+  "name": "@bpa/core-redux",
+  "projectType": "library",
+  "sourceRoot": "packages/core/redux/src",
+  "tags": ["scope:core"]
+}

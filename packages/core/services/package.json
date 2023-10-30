@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@microsoft/sp-http": "1.18.0",
-    "@microsoft/sp-page-context": "1.18.0",
+    "@microsoft/sp-webpart-base": "1.18.0",
     "@pnp/graph": "~2.11.0",
     "@pnp/sp": "~2.11.0",
     "@pnp/telemetry-js": "~2.0.0"

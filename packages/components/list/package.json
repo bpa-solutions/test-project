@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@bpa/core-services": "*",
     "@bpa/ui-layouts": "*",
     "@fluentui/react": "~8.111.2",
     "@reduxjs/toolkit": "~1.9.5",

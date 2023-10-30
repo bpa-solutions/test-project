@@ -21,7 +21,7 @@
     "eslint": "~8.48.0",
     "jest": "~27.1.1",
     "rimraf": "~5.0.1",
-    "typescript": "~5.1.6"
+    "typescript": "4.7.4"
   },
   "files": [
     "lib/index.js"

@@ -158,9 +158,8 @@ module.exports = {
           },
         ],
         "@typescript-eslint/no-use-before-define": "off",
-        "@typescript-eslint/prefer-enum-initializers": "warn",
+        "@typescript-eslint/prefer-enum-initializers": "error",
         "@typescript-eslint/prefer-readonly": "warn",
-        "@typescript-eslint/typedef": "off",
         /* 'functional/prefer-immutable-types': [
           'warn',
           {
@@ -172,41 +171,12 @@ module.exports = {
           }
         ] */
 
+        "@typescript-eslint/typedef": "off",
         "jsdoc/check-tag-names": [
           "warn",
           { definedTags: ["override", "packageDocumentation", "preferred"] },
         ],
-        "jsdoc/require-param-description": "off",
-        "jsdoc/require-returns": "off",
-        "jsdoc/require-returns-description": "off",
-        "no-void": "off",
-        "react-hooks/exhaustive-deps": [
-          "warn",
-          {
-            additionalHooks: "(useEffectStringified)",
-          },
-        ],
-        "react/no-multi-comp": "warn",
-
-        "@typescript-eslint/prefer-enum-initializers": "error",
         "jsdoc/informative-docs": "warn",
-        "jsdoc/require-file-overview": [
-          "warn",
-          {
-            tags: {
-              author: {
-                initialCommentsOnly: true,
-                mustExist: true,
-                preventDuplicates: true,
-              },
-              file: {
-                initialCommentsOnly: true,
-                mustExist: true,
-                preventDuplicates: true,
-              },
-            },
-          },
-        ],
         "jsdoc/require-jsdoc": [
           "warn",
           {
@@ -226,6 +196,7 @@ module.exports = {
         "jsdoc/require-param-description": "warn",
         "jsdoc/require-returns": "warn",
         "jsdoc/require-returns-description": "warn",
+        "no-void": "off",
         "perfectionist/sort-array-includes": ["warn", { "spread-last": true }],
         "perfectionist/sort-classes": [
           "warn",
@@ -274,6 +245,13 @@ module.exports = {
         "perfectionist/sort-object-types": "warn",
         "perfectionist/sort-objects": "warn",
         "perfectionist/sort-union-types": "warn",
+        "react/no-multi-comp": "warn",
+        "react-hooks/exhaustive-deps": [
+          "warn",
+          {
+            additionalHooks: "(useEffectStringified)",
+          },
+        ],
         // 'rulesdir/comment-density': ['warn', 0.2, ['index.ts', '.eslintrc.js']],
         "sonarjs/cognitive-complexity": "warn",
         "sonarjs/max-switch-cases": "warn",

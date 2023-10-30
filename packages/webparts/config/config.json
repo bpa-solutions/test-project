@@ -5,32 +5,28 @@
     "list-web-part-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/listWebPart/ListWebPartWebPart.js",
-          "manifest": "./src/webparts/listWebPart/ListWebPartWebPart.manifest.json"
+          "entrypoint": "./lib/list/ListWebPart.js",
+          "manifest": "./src/list/ListWebPart.manifest.json"
         }
       ]
     },
     "details-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/details/DetailsWebPart.js",
-          "manifest": "./src/webparts/details/DetailsWebPart.manifest.json"
+          "entrypoint": "./lib/details/DetailsWebPart.js",
+          "manifest": "./src/details/DetailsWebPart.manifest.json"
         }
       ]
     },
     "helper-application-customizer": {
       "components": [
         {
-          "entrypoint": "./lib/extensions/helper/HelperApplicationCustomizer.js",
-          "manifest": "./src/extensions/helper/HelperApplicationCustomizer.manifest.json"
+          "entrypoint": "./lib/helper/HelperApplicationCustomizer.js",
+          "manifest": "./src/helper/HelperApplicationCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
-  "localizedResources": {
-    "ListWebPartWebPartStrings": "lib/webparts/listWebPart/loc/{locale}.js",
-    "DetailsWebPartStrings": "lib/webparts/details/loc/{locale}.js",
-    "HelperApplicationCustomizerStrings": "lib/extensions/helper/loc/{locale}.js"
-  }
+  "localizedResources": {}
 }

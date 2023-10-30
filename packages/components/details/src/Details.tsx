@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-literals -- Test */
 import { Details as UIDetails } from '@bpa/ui-layouts';
-import { Stack, Text } from '@fluentui/react';
+import { getId, Stack, Text } from '@fluentui/react';
 import React, { FC, useCallback, useEffect, useState } from 'react';
 
 export interface IDetailsProps {
@@ -23,6 +23,7 @@ interface ICustomEventPayload {
  */
 const Details: FC<IDetailsProps> = ({ description, listName }) => {
   const [id, setId] = useState<number>();
+  const divId = getId('details-description');
 
   const locationChangeChangeHandler = useCallback(
     (event: CustomEvent<ICustomEventPayload>) => {
@@ -32,6 +33,13 @@ const Details: FC<IDetailsProps> = ({ description, listName }) => {
     },
     [id]
   );
+
+  useEffect(() => {
+    const descDiv = document.getElementById(divId);
+    if (descDiv) {
+      descDiv.innerHTML = description;
+    }
+  }, [description, divId]);
 
   useEffect(() => {
     const url = new URL(document.URL);
@@ -61,7 +69,7 @@ const Details: FC<IDetailsProps> = ({ description, listName }) => {
   return (
     <Stack>
       <Text variant="xLarge">Details of items</Text>
-      <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div id={divId} dangerouslySetInnerHTML={{ __html: description }} />
       <UIDetails id={id} listName={listName} />
     </Stack>
   );

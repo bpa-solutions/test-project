@@ -1,0 +1,61 @@
+{
+  "devDependencies": {
+    "@nx/workspace": "16.7.4",
+    "@rushstack/eslint-patch": "~1.3.0",
+    "eslint": "~8.48.0",
+    "gulp": "~4.0.2",
+    "husky": "~8.0.3",
+    "lint-staged": "~14.0.1",
+    "nx": "16.7.4",
+    "prettier": "~3.0.3",
+    "rimraf": "~5.0.1",
+    "serve": "^14.2.1",
+    "sortier": "~2.0.1"
+  },
+  "engines": {
+    "node": ">=16.13.0 <17.0.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,html}": [
+      "sortier",
+      "prettier --write"
+    ],
+    "*.ts": [
+      "env NODE_OPTIONS=--max_old_space_size=8192 eslint --fix",
+      "prettier --write"
+    ],
+    "*.tsx": [
+      "env NODE_OPTIONS=--max_old_space_size=8192 eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "build": "yarn build:packages && nx dist @bpa/webparts",
+    "build:packages": "nx run-many --target=build --exclude @bpa/webparts",
+    "bundle": "nx dist:ship @bpa/webparts",
+    "clean": "nx run-many --target=clean && nx reset",
+    "dist": "nx dist @bpa/webparts",
+    "gulp": "gulp --gulpfile packages/webparts/gulpfile.js",
+    "lint": "nx run-many --target=lint --output-style=stream",
+    "lint:fix": "nx run-many --target=lint:fix",
+    "make": "tsc && node ./scripts/sonar",
+    "nx": "nx",
+    "postinstall": "husky install && yarn make && nx run-many --target=make",
+    "serve": "nx run-many --target=serve --projects=@bpa/webparts --output-style=stream",
+    "test": "nx affected --target=test --parallel=1 && nx post-test @bpa/tools-test",
+    "test:all": "nx run-many --target=test --parallel=1 && nx post-test @bpa/tools-test",
+    "test:snap": "nx run-many --target=test:snap --parallel=1"
+  },
+  "main": "lib/index.js",
+  "name": "test-spfx",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/components/*",
+    "packages/core/*",
+    "packages/ui/*",
+    "packages/tools/*",
+    "packages/webparts"
+  ],
+  "packageManager": "yarn@3.4.1"
+}

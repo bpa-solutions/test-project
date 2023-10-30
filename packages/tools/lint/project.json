@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": [],
+  "name": "@bpa/tools-lint",
+  "projectType": "application",
+  "sourceRoot": "packages/tools/lint/src",
+  "tags": ["scope:tools"]
+}

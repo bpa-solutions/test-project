@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": [],
+  "name": "@bpa/tools-test",
+  "projectType": "application",
+  "sourceRoot": "packages/tools/test/src",
+  "tags": ["scope:tools"]
+}

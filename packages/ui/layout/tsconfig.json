@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "importsNotUsedAsValues": "error",
+    "outDir": "lib",
+    "removeComments": false,
+    "rootDir": "src"
+  },
+  "exclude": ["**/node_modules", "**/lib"],
+  "extends": "../../../config/weaker.tsconfig.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}

@@ -1,0 +1,53 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Build generated files
+lib
+dist
+solution
+!devops/
+temp
+*.sppkg
+tests.js
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# OSX
+.DS_Store
+
+# Visual Studio files
+.ntvs_analysis.dat
+.vs
+bin
+obj
+
+# Resx Generated Code
+*.resx.ts
+
+# Styles Generated Code
+*.scss.ts
+*.scss.d.ts
+
+# SonarQube scan elements
+.scannerwork
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+.installenv
+.vscode/settings.json
+config/jest.config.json
+.husky/.gitignore
+
+.env

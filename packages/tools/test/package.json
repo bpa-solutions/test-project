@@ -1,0 +1,33 @@
+{
+  "description": "Jest preset configuration for SharePoint Framework projects that leverage React v16.8 (SPFx >=1.9.0).",
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/plugin-proposal-decorators": "7.22.15",
+    "@babel/preset-env": "7.22.15",
+    "@babel/preset-react": "7.22.15",
+    "@babel/preset-typescript": "7.22.15",
+    "@testing-library/jest-dom": "~5.16.5",
+    "@types/jest": "~27.0.3",
+    "@types/jest-axe": "^3.5.5",
+    "@uifabric/jest-serializer-merge-styles": "^7.2.6",
+    "babel-jest": "27.5.1",
+    "identity-obj-proxy": "~3.0.0",
+    "jest": "~27.1.1",
+    "jest-axe": "^7.0.1",
+    "jest-environment-jsdom": "27.1.0",
+    "jest-image-snapshot": "^4.5.1",
+    "jest-json-reporter": "^1.2.2",
+    "jest-junit": "~10.0.0",
+    "raf": "~3.4.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "typescript": "~5.1.6",
+    "yargs": "~17.7.2"
+  },
+  "files": [
+    "jest-preset.js"
+  ],
+  "name": "@bpa/tools-test",
+  "private": true,
+  "version": "1.0.0"
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020",
+    "types": ["node"]
+  },
+  "include": ["scripts/**/*"]
+}

@@ -1,0 +1,19 @@
+{
+  "affected": {
+    "defaultBase": "origin/master"
+  },
+  "extends": "nx/presets/npm.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "cacheableOperations": ["build", "lint", "lint:fix", "test", "dist"]
+      },
+      "runner": "nx/tasks-runners/default"
+    }
+  }
+}

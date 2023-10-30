@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "importsNotUsedAsValues": "error",
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "strictNullChecks": true,
+    "types": ["jest", "node"]
+  },
+  "exclude": ["**/node_modules", "**/lib", "jest.config.js"],
+  "extends": "../../../config/base.tsconfig.json",
+  "include": ["src/**/*"]
+}

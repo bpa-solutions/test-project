@@ -1,0 +1,8 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "implicitDependencies": ["@bpa/core-services", "@bpa/ui-layouts"],
+  "name": "@bpa/components-list",
+  "projectType": "application",
+  "sourceRoot": "packages/components/list/src",
+  "tags": ["scope:components"]
+}
